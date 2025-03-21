@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sefali Gaming Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .navbar {
+            background-color: #ff4500;
+            padding: 15px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            padding: 100px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .game {
+            width: 250px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #333;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            text-align: left;
+            transition: transform 0.3s;
+        }
+        .game:hover {
+            transform: scale(1.05);
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .game-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .play-btn {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .review-btn {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .review-btn:hover, .play-btn:hover {
+            background-color: #e03e00;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>Sefali Gaming Platform</div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Add Game</a>
+            <a href="#">Reviews</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="game">
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/578080/header.jpg" alt="PUBG">
+            <div class="game-name">PUBG</div>
+            <a href="#" class="play-btn">Play Now</a>
+            <a href="#" class="review-btn">Add Review</a>
+        </div>
+        <div class="game">
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/header.jpg" alt="Apex Legends">
+            <div class="game-name">Apex Legends</div>
+            <a href="#" class="play-btn">Play Now</a>
+            <a href="#" class="review-btn">Add Review</a>
+        </div>
+        <div class="game">
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/252490/header.jpg" alt="Rust">
+            <div class="game-name">Rust</div>
+            <a href="#" class="play-btn">Play Now</a>
+            <a href="#" class="review-btn">Add Review</a>
+        </div>
+        <div class="game">
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg" alt="CS: GO">
+            <div class="game-name">Counter-Strike: GO</div>
+            <a href="#" class="play-btn">Play Now</a>
+            <a href="#" class="review-btn">Add Review</a>
+        </div>
+    </div>
+</body>
+</html>
