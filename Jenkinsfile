@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-repo/terraform-three-tier.git'
+                git 'https://github.com/SefaliSabnam/Terraform-3tier.git'
             }
         }
         stage('Terraform Init') {
